@@ -1,27 +1,35 @@
 # Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+####  Calculate your age on another planet!
 
 #### By Brent Hickman
 
 ## Technologies Used
 
 * _Javascript_
+* _HTML_
+* _NPM_
+* _Webpack_
 
 
-## Description
+## Use this calculator to find convert your Earth age to Mercury, Venus, Mars and Jupiter solar years.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Open a terminal window and clone this repository by enter into the command line:
+> git clone https://github.com/BrentHickman/super-galactic-age-calculator.git
+* Install the nessesary dependencies by enter into the command line:
+> npm install
+* To launch a development server, enter into the command line:
+> npm run start
+* To create a production build to the dist directory, enter into the command line:
+> npm run build
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Please inform deveopler if experiencing any bugs
 
 ## License
+
+* [MIT](https://opensource.org/licenses/MIT)
