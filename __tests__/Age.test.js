@@ -19,6 +19,6 @@ describe('Age', () => {
 
   test('should take the earthAge of myAge and convert it to venus years and update venusYears property in Age class', () => {
     myAge.venusYears(myAge.earthAge)
-    expect(myAge.venusAge).toEqual(12.13);
+    expect(myAge.venusAge).toEqual(16.13);
   });
 });
