@@ -26,4 +26,9 @@ describe('Age', () => {
     myAge.marsYears(myAge.earthAge)
     expect(myAge.marsAge).toEqual(5.32);
   });
+
+  test('should take the earthAge of myAge and convert it to jupiter years and update jupiterAge property in Age class', () => {
+    myAge.jupiterYears(myAge.earthAge)
+    expect(myAge.jupiterAge).toEqual(0.84);
+  });
 });
