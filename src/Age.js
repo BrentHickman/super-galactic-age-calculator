@@ -10,4 +10,7 @@ export default class Age {
   mercuryYears(earthAge){
     this.mercuryAge = Number((earthAge / 0.24).toFixed(2)); 
   }
+
+  venusYears(earthAge){
+  }
 }

@@ -16,4 +16,9 @@ describe('Age', () => {
     myAge.mercuryYears(myAge.earthAge)
     expect(myAge.mercuryAge).toEqual(41.67);
   });
+
+  test('should take the earthAge of myAge and convert it to venus years and update venusYears property in Age class', () => {
+    myAge.venusYears(myAge.earthAge)
+    expect(myAge.venusAge).toEqual(12.13);
+  });
 });
