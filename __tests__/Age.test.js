@@ -31,4 +31,10 @@ describe('Age', () => {
     myAge.jupiterYears(myAge.earthAge)
     expect(myAge.jupiterAge).toEqual(0.84);
   });
+
+  test('should subtract the pastAge value from myAge.earthAge and return how many earthYears have passed since past age then store it in earthYearsSince property of myAge', () => {
+    let pastAge = 5;
+    myAge.yearsSince(myAge.earthAge, pastAge)
+    expect(myAge.earthYearsSince).toEqual(5);
+  });
 });
