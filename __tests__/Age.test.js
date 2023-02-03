@@ -47,4 +47,10 @@ describe('Age', () => {
     expect(myAge.marsYearsSince).toEqual(2.66);
     expect(myAge.jupiterYearsSince).toEqual(0.42);
   });
+
+  test('should subtract myAge.earthAge from futureAge value and return how many earthYears until futureAge then store it in earthYearsTil property of myAge', () => {
+    let futureAge = 15;
+    myAge.yearsTil(myAge.earthAge, futureAge)
+    expect(myAge.earthYearsTil).toEqual(5);
+  });
 });
