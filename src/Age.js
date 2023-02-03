@@ -25,7 +25,7 @@ export default class Age {
   }
 
   yearsSince(earthAge, pastAge){
-    // this.yearsSince = Number((earthAge - pastAge).toFixed(2));
+    this.earthYearsSince = Number((earthAge - pastAge).toFixed(2));
   }
 
 }
