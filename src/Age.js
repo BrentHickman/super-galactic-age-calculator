@@ -20,6 +20,6 @@ export default class Age {
   }
 
   jupiterYears(earthAge){
-
+    this.jupiterAge = Number((earthAge / 11.86).toFixed(2));
   }
 }
