@@ -12,6 +12,6 @@ export default class Age {
   }
 
   venusYears(earthAge){
-    // this.venusAge = Number((earthAge / 0.62).toFixed(2)); 
+    this.venusAge = Number((earthAge / 0.62).toFixed(2)); 
   }
 }
