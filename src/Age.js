@@ -43,5 +43,9 @@ export default class Age {
 
   yearsTil(earthAge, futureAge){
     this.earthYearsTil = Number((futureAge - earthAge).toFixed(2));
+    this.mercuryYearsTil = Number((this.earthYearsTil / 0.24).toFixed(2));
+    this.venusYearsTil = Number((this.earthYearsTil / 0.62).toFixed(2));
+    this.marsYearsTil = Number((this.earthYearsTil / 1.88).toFixed(2));
+    this.jupiterYearsTil = Number((this.earthYearsTil / 11.86).toFixed(2));
   }
 }
