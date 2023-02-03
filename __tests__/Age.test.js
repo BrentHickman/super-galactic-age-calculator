@@ -53,4 +53,14 @@ describe('Age', () => {
     myAge.yearsTil(myAge.earthAge, futureAge)
     expect(myAge.earthYearsTil).toEqual(5);
   });
+
+  test('should correctly convert earthYearsTil property value to mercuryYearsTil, venusYearsTil, marsYearsTil, and jupiterYearsTil and store in the corresponding property of myAge obj', () => {
+    let futureAge = 15;
+    myAge.yearsTil(myAge.earthAge, futureAge)
+    expect(myAge.earthYearsTil).toEqual(5);
+    expect(myAge.mercuryYearsTil).toEqual(20.83);
+    expect(myAge.venusYearsTil).toEqual(8.06);
+    expect(myAge.marsYearsTil).toEqual(2.66);
+    expect(myAge.jupiterYearsTil).toEqual(0.42);
+  });
 });
