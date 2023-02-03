@@ -1,11 +1,15 @@
 export default class Age {
-  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthYearsSince) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthYearsSince, mercuryYearsSince, venusYearsSince, marsYearsSince, jupiterYearsSince) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
     this.marsAge = marsAge;
     this.jupiterAge = jupiterAge;
     this.earthYearsSince = earthYearsSince;
+    this.mercuryYearsSince = mercuryYearsSince;
+    this.venusYearsSince = venusYearsSince;
+    this.marsYearsSince = marsYearsSince;
+    this.jupiterYearsSince = jupiterYearsSince;
   }
 
   mercuryYears(earthAge){

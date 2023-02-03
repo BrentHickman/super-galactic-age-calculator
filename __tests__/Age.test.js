@@ -37,4 +37,14 @@ describe('Age', () => {
     myAge.yearsSince(myAge.earthAge, pastAge)
     expect(myAge.earthYearsSince).toEqual(5);
   });
+
+  test('should correctly convert earthYearsSince property value to mercuryYearsSince, venusYearsSince, marsYearsSince, and jupiterYearsSince and store in the corresponding property of myAge obj', () => {
+    let pastAge = 5;
+    myAge.yearsSince(myAge.earthAge, pastAge)
+    expect(myAge.earthYearsSince).toEqual(5);
+    expect(myAge.mercuryYearsSince).toEqual(20.84);
+    expect(myAge.venusYearsSince).toEqual(8.06);
+    expect(myAge.marsYearsSince).toEqual(2.66);
+    expect(myAge.jupiterYearsSince).toEqual(0.42);
+  });
 });
