@@ -7,6 +7,7 @@ export default class Age {
     this.jupiterAge = jupiterAge;
   }
 
-  mercuryYears(earthAge){
-  };
+  mercuryYears(mercuryAge){
+    // this.mercuryAge = mercuryAge;
+  }
 }

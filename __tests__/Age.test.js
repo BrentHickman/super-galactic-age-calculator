@@ -1,4 +1,4 @@
-import Age from '../src/Age.js'
+import Age from './../src/Age.js'
 
 describe('Age', () => {
 
@@ -13,6 +13,7 @@ describe('Age', () => {
   });
 
   test('should take the earthAge of myAge and convert it to mercury years and add mercuryYears property to Age class', () => {
-    expect(mercuryYears(myAge.earthAge)).toEqual(41.66);
+    myAge.mercuryYears(41.66)
+    expect(myAge.mercuryAge).toEqual(41.66);
   });
 });
