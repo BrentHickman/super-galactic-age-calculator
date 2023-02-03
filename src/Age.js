@@ -16,5 +16,6 @@ export default class Age {
   }
 
   marsYears(earthAge){
+    this.marsAge = Number((earthAge / 1.88).toFixed(2));
   }
 }
