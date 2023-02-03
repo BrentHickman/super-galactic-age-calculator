@@ -1,15 +1,13 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
 #### (Brief Description of Application)
 
-#### By (Your Name Here)
+#### By Brent Hickman
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _Javascript_
+
 
 ## Description
 
