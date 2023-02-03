@@ -38,6 +38,6 @@ export default class Age {
   }
 
   yearsTil(earthAge, futureAge){
-
+    this.earthYearsTil = Number((futureAge - earthAge).toFixed(2));
   }
 }
