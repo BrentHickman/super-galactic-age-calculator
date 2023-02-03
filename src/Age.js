@@ -7,7 +7,7 @@ export default class Age {
     this.jupiterAge = jupiterAge;
   }
 
-  mercuryYears(mercuryAge){
-    // this.mercuryAge = mercuryAge;
+  mercuryYears(earthAge){
+    this.mercuryAge = Number((earthAge / 0.24).toFixed(2)); 
   }
 }

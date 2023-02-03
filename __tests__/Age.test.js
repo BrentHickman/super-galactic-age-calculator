@@ -14,6 +14,6 @@ describe('Age', () => {
 
   test('should take the earthAge of myAge and convert it to mercury years and add mercuryYears property to Age class', () => {
     myAge.mercuryYears(myAge.earthAge)
-    expect(myAge.mercuryAge).toEqual(41.66);
+    expect(myAge.mercuryAge).toEqual(41.67);
   });
 });
