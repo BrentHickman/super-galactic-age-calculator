@@ -12,7 +12,7 @@
 * _Webpack_
 
 
-## Use this calculator to find convert your Earth age to Mercury, Venus, Mars and Jupiter solar years.
+## Use this calculator to find convert your Earth age to Mercury, Venus, Mars and Jupiter solar years. It will also calculate how solar years between past and future ages.
 
 ## Setup/Installation Requirements
 

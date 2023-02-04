@@ -58,6 +58,34 @@ function showSinceSolarAge(mySinceAge, myPastAge){
   document.getElementById("showSinceAges").append(newPastJupiterAge);
 }
 
+// solar age until
+function showTilSolarAge(myTilAge, myFutureAge){
+  myTilAge.yearsTil(myTilAge.earthAge, myFutureAge);
+
+  let newTilEarthAge = document.createElement("li");
+  newTilEarthAge.innerText =  "You are " + myTilAge.earthAge + " Earth years old.";
+  document.getElementById("showTilAges").append(newTilEarthAge);
+
+  let newFutureEarthAge = document.createElement("li");
+  newFutureEarthAge.innerText =  "It will take " + myTilAge.earthYearsTil + " Earth years until you are " + myFutureAge + " years old.";
+  document.getElementById("showTilAges").append(newFutureEarthAge);
+
+  let newFutureMercuryAge = document.createElement("li");
+  newFutureMercuryAge.innerText =  "It will take " + myTilAge.mercuryYearsTil + " Mercury years until you are " + myFutureAge + " years old on Earth.";
+  document.getElementById("showTilAges").append(newFutureMercuryAge);
+
+  let newFutureVenusAge = document.createElement("li");
+  newFutureVenusAge.innerText =  "It will take " + myTilAge.venusYearsTil + " Venus years until you are " + myFutureAge + " years old on Earth.";
+  document.getElementById("showTilAges").append(newFutureVenusAge);
+
+  let newFutureMarsAge = document.createElement("li");
+  newFutureMarsAge.innerText =  "It will take " + myTilAge.marsYearsTil + " Mars years until you are " + myFutureAge + " years old on Earth.";
+  document.getElementById("showTilAges").append(newFutureMarsAge);
+
+  let newFutureJupiterAge = document.createElement("li");
+  newFutureJupiterAge.innerText =  "It will take " + myTilAge.jupiterYearsTil + " Jupiter years until you are " + myFutureAge + " years old on Earth.";
+  document.getElementById("showTilAges").append(newFutureJupiterAge);
+}
 
 //handle submits
 
@@ -78,18 +106,34 @@ function sinceAgeSubmit(){
   return mySinceAge;
 }
 
+// solar age until
+function tilAgeSubmit(){
+  let myTilEarthAge = document.getElementById("earthAgeTilInput").value;
+  let myFutureAge = document.getElementById("futureAgeInput").value;
+  let myTilAge = new Age(myTilEarthAge);
+  showTilSolarAge(myTilAge, myFutureAge);
+  return myTilAge;
+}
+
 //listeners
 
 window.addEventListener("load", () => {
   const solarAgeForm = document.getElementById("solarAge");
   const solarAgeSinceForm = document.getElementById("solarAgeSince");
+  const solarAgeTilForm = document.getElementById("solarAgeTil");
   let myAge;
+  let mySinceAge;
+  let myTilAge;
   solarAgeForm.addEventListener("submit", (event) => {
     event.preventDefault();
     myAge = currentAgeSubmit();
   });
   solarAgeSinceForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    myAge = sinceAgeSubmit();
+    mySinceAge = sinceAgeSubmit();
+  });
+  solarAgeTilForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    myTilAge = tilAgeSubmit();
   });
 });
